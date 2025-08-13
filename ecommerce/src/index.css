@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.right,.left,#root{
+    scrollbar-width: none;
+}
+.iconb svg{
+    font-size: 30px;
+}
