@@ -93,7 +93,7 @@ const formRef=useRef(null)
 
 {/* Mobile menu */}
    {isMenuOpen && (
-        <div ref={menuRef} className='absolute pt-14 md:pt-20 bg-blue-500 flex text-white md:hidden text-center right-0 h-80 w-[110px] rounded-tl-lg rounded-bl-lg'>
+        <div ref={menuRef} className=' mt-14 md:pt-20 bg-blue-500 flex fixed z-50  text-white md:hidden text-center right-0 h-80 w-[110px] rounded-tl-lg rounded-bl-lg'>
             <ul className='font-semibold left-1 top-2 flex flex-col p-4 gap-3 justify-evenly'>
                 <li className='hover:text-red-400' onClick={()=>HandleMobMenu("/")}>Home</li>
                 <li className='hover:text-red-400' onClick={()=>HandleMobMenu("/men")}>Men</li>
