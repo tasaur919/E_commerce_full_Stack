@@ -32,7 +32,7 @@ function Blog() {
             </div>
             {/* social media icons */}
             <div className="iconb md:px-44  md:mt-5 mt-10 flex flex-row gap-5 md:gap-8 justify-center items-center" >
-            <a href="https://www.youtube.com/@TasauvarAnsari300"><span><YouTubeIcon/></span></a>
+            <a href="https://www.youtube.com/@indiancoder7869"><span><YouTubeIcon/></span></a>
             <a href="https://www.instagram.com/funny15700?igsh=eTZsZ3MyMDNvMWN3" ><span><InstagramIcon/></span></a>
             <a href="t.me/tasauvar1" ><span><TwitterIcon/></span></a>
             <a href="https://github.com/tasaur919/" ><span><GitHubIcon/></span></a>
