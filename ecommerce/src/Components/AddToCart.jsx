@@ -17,34 +17,35 @@ const navigate=useNavigate();
     
 
   return (
-    <div className="px-13 pt-32 md:pt-28">
+    <div className="right px-13 pt-36 md:pt-32 overflow-scroll h-[99vh]">
       <h2 className="text-2xl font-bold mb-4 text-center">Your Cart</h2>
       {cart1.length === 0 ? (
         <p className="text-red-500 justify-center py-20 items-center text-center text-3xl font-semibold h-[80vh]">Your cart is empty.</p>
       ) : (
-        <div className='flex flex-col md:flex-row gap-6 pt-10 h-[90vh]'>
-        <div className="grid gap-4 w-full md:w-[65%]  md:h-32">
+        <div className='flex flex-col md:flex-row gap-6 pt-10 h-[90vh] '>
+        <div className="grid gap-4 w-full md:w-[65%]  md:h-32 ">
           {cart1.map((item, index) => (
-            <div key={index} className="flex flex-row gap-8 justify-between border py-6 px-8 mb-10">
+            <div key={index} className="flex flex-row  md:flex-row gap-8 justify-between border py-6 px-8 mb-10 ">     <div className='w-[80%] md:w-[65%] md:flex md:flex-row flex-col gap-10'>
               <img src={item.image} alt={item.name} className="h-32 w-36" />
-              <div className='flex flex-col w-[50%] '>
-              <h3 className="text-lg font-semibold">{item.name}</h3>
+              <div className='flex flex-col w-full pt-2'>
+              <h3 className="text-[16px] font-semibold">{item.name}</h3>
               <h4 className='text-[16px] font-thin'>{item.description}</h4>
-              <p className="text-gray-600 font-bold">Price: ₹{item.price}</p>
+              <p className="text-gray-800 font-bold ">Price: ₹{item.price}</p>
               </div>
-              <div className='flex flex-col pr-10 justify-between items-center'>
-                   <button className='text-3xl font-bold cursor-pointer' onClick={()=>RemoveItem(index)}>&times;</button>
+              </div>
+              <div className='flex flex-col w-[10%] pr-10  md:justify-center items-center text-center'>
+                   <button className='text-5xl md:text-4xl font-bold cursor-pointer text-red-600 ' onClick={()=>RemoveItem(index)}>&times;</button>
                    {/* <button className='cursor-pointer bg-green-500 text-white text-2xl px-3 py-1 rounded-md font-semibold'>Buy</button> */}
               </div>
             </div>
           ))}
         </div>
 
-       <div className='md:w-[30%] w-full '>
+       <div className='md:w-[35%] w-full '>
             <div className='bg-zinc-200 flex flex-col p-10 rounded-md justify-center items-center py-6 px-5 mb-10'>
                 <h1 className='text-center text-2xl font-semibold font-serif'>Total Amount Details</h1>
 
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 '>
                     <p>Number of Products : {cart1.length}</p>
                     {cart1.map((item)=>(
                         <div>
