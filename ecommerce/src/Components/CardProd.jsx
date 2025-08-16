@@ -9,9 +9,9 @@ function CardProd({item, index,addToCart}) {
         <img
           src={item.image}
           alt=""
-          className="absolute top-0 h-[55%] w-full p-2"
+          className="absolute top-0 h-[40%] md:h-[55%] w-full p-2"
         />
-        <div className="flex flex-col absolute bottom-2 px-5 text-3xl md:text-[16px]">
+        <div className="flex flex-col absolute  bottom-2 px-5 text-3xl md:text-[16px]">
           <span className="font-semibold pt-5">{item.name}</span>
           <span className='text-start font-thin'> {item.description}</span>
           <br />
